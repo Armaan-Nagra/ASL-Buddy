@@ -26,13 +26,18 @@ Check out our project submission on **Devpost** to see more details, screenshots
 
 ## 🔧 Technologies Used
 
-- **iOS Development**: Swift and SwiftUI for a smooth and responsive app interface.
-- **Computer Vision**: Leveraged machine learning models to recognize ASL gestures (used Core ML).
-- **Gamification**: Created quizzes to engage users and make learning fun.
+### Final Implementation
+- **iOS Development**: Built with Swift and SwiftUI to provide a smooth, responsive, and native app interface.
+- **Core ML**: Leveraged Apple's Core ML framework for efficient on-device ASL gesture recognition, ensuring real-time performance and seamless integration with iOS.
 
-## 🌟 Getting Started
+### First Prototype
+- **Computer Vision**: Used `mediapipe` and `opencv` to enable real-time ASL gesture detection.
+- **Machine Learning**:
+  - Implemented a `Random Forest Classifier` using `scikit-learn` for gesture recognition during early development.
+  - Utilized `pickle` for saving and loading the trained model.
+- **Data Handling**:
+  - Processed gesture data using NumPy to ensure compatibility and efficiency.
+  - Applied `train_test_split` from `sklearn` to partition data into training and test sets.
+- **Video Capture**: Integrated `cv2.VideoCapture` to enable real-time hand gesture detection in the prototype.
+- **Hand Tracking**: Used `mediapipe Hands` for precise hand landmark detection and tracking in the initial testing phase.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Armaan-Nagra/ASL-Buddy.git
-   cd ASL-Buddy
